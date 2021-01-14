@@ -20,6 +20,7 @@ use Magento\Framework\Filesystem;
 use Magento\Framework\Serialize\Serializer\Json;
 use Magento\Framework\View\Asset\Repository;
 use Magento\Store\Model\StoreManagerInterface;
+use Pugnet\PlpRandomCats\Api\RandomCatManagementInterface;
 use Pugnet\PlpRandomCats\Enum\ApiEnum;
 use Magento\Framework\Filesystem\Io\File;
 use Psr\Log\LoggerInterface;
@@ -39,17 +40,16 @@ class RandomCat extends Images implements RandomCatInterface
 
     /**
      * RandomCat constructor.
-     *
-     * @param Context               $context
-     * @param Data                  $backendData
-     * @param Filesystem            $filesystem
-     * @param StoreManagerInterface $storeManager
-     * @param Escaper               $escaper
-     * @param Repository            $assetRepository
-     * @param Json                  $jsonSerializer
-     * @param LoggerInterface       $logger
-     * @param RandomCatManagement   $catManagement
-     * @param File                  $fileDriver
+     * @param Context                      $context
+     * @param Data                         $backendData
+     * @param Filesystem                   $filesystem
+     * @param StoreManagerInterface        $storeManager
+     * @param Escaper                      $escaper
+     * @param Repository                   $assetRepository
+     * @param Json                         $jsonSerializer
+     * @param LoggerInterface              $logger
+     * @param RandomCatManagementInterface $catManagement
+     * @param File                         $fileDriver
      */
     public function __construct(
         Context $context,
@@ -60,7 +60,7 @@ class RandomCat extends Images implements RandomCatInterface
         Repository $assetRepository,
         Json $jsonSerializer,
         LoggerInterface $logger,
-        RandomCatManagement $catManagement,
+        RandomCatManagementInterface $catManagement,
         File $fileDriver
     ) {
         parent::__construct($context, $backendData, $filesystem, $storeManager, $escaper);

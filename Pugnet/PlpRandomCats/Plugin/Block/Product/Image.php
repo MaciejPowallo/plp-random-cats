@@ -13,7 +13,7 @@ namespace Pugnet\PlpRandomCats\Plugin\Block\Product;
 
 use Pugnet\PlpRandomCats\Model\ConfigProvider;
 use Magento\Catalog\Block\Product\Image as MagentoImage;
-use Pugnet\PlpRandomCats\Model\RandomCat;
+use Pugnet\PlpRandomCats\Model\Spi\RandomCatInterface;
 
 /**
  * Class Image
@@ -27,13 +27,12 @@ class Image
 
     /**
      * Image constructor.
-     *
-     * @param ConfigProvider $configProvider
-     * @param RandomCat      $randomCat
+     * @param ConfigProvider     $configProvider
+     * @param RandomCatInterface $randomCat
      */
     public function __construct(
         ConfigProvider $configProvider,
-        RandomCat $randomCat
+        RandomCatInterface $randomCat
     ) {
         $this->configProvider = $configProvider;
         $this->randomCat = $randomCat;
