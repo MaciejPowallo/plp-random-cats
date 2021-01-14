@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Pugnet_PlpRandomCats::pugnet_menu" title="Pugnet" translate="title" sortOrder="999"
+             module="Pugnet_PlpRandomCats"
+             resource="Pugnet_PlpRandomCats::core"/>
+        <add id="Pugnet_PlpRandomCats::pugnet_plprandomcats_title" title="Random Cat Images" translate="title" sortOrder="10"
+             module="Pugnet_PlpRandomCats"
+             parent="Pugnet_PlpRandomCats::pugnet_menu"
+             resource="Magento_Backend::content"/>
+        <add id="Pugnet_PlpRandomCats::pugnet_plprandomcats" title="Random Cat Images for PLP" translate="title" sortOrder="10"
+             module="Pugnet_PlpRandomCats"
+             parent="Pugnet_PlpRandomCats::pugnet_menu"
+             resource="Magento_Backend::content"/>
+        <add id="Pugnet_PlpRandomCats::configuration" title="Configuration" translate="title" sortOrder="10"
+             module="Pugnet_PlpRandomCats"
+             parent="Pugnet_PlpRandomCats::pugnet_plprandomcats"
+             resource="Magento_Backend::content"
+             action="adminhtml/system_config/edit/section/pugnet_plprandomcats"/>
+    </menu>
+</config>

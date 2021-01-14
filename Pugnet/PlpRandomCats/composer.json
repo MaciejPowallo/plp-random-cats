@@ -1,0 +1,38 @@
+{
+    "name": "pugnet/module-plp-random-cats",
+    "description": "Magento 2.4.x Module - Random Cat for Product Listing Page",
+    "type": "magento2-module",
+    "readme": "README.md",
+    "license": [
+        ""
+    ],
+    "keywords": [
+        "magento2",
+        "import",
+        "plp",
+        "random",
+        "cats"
+    ],
+    "authors": [
+        {
+            "name": "Maciej Powallo",
+            "email": "maciej.powallo@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "~7.3.0||~7.4.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~6.5.0"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Pugnet\\PlpRandomCats\\": ""
+        }
+    },
+    "version": "1.0.0"
+}

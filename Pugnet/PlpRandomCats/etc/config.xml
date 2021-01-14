@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <pugnet_plprandomcats>
+            <general>
+                <enabled>1</enabled>
+                <api_key>5up3rc0nf1d3n714llp455w0rdf0rc47s</api_key>
+            </general>
+        </pugnet_plprandomcats>
+    </default>
+</config>
